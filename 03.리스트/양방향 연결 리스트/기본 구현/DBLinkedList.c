@@ -70,6 +70,7 @@ LData LRemove(List * plist){
     rdata = rpos->data;
 
     if(plist->cur->next == NULL){//맨 뒤 삭제
+        plist->cur->prev->next = NULL;
         plist->cur = plist->cur->prev;
         free(rpos);
         return rdata;
