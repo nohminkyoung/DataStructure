@@ -1,0 +1,29 @@
+void ListInit (List * plist);
+- 생성된 리스트의 주소값을 인자로 받아서 초기화를 진행
+- 리스트 생성 후 가장 먼저 호출해아함
+
+void LInsert(List * plist, LData data);
+- 리스트에 데이터를 저장하는 함수
+- data로 전달된 값을 리스트에 순차적으로 저장
+
+int LFirst(List * plist, LData * pdata);
+- 리스트의 첫번째 데이터 인자로 전달된 pdata에 저장됨
+- 리스트의 데이터들을 순차적으로 살펴보기 위해 첫번째 지점으로의 초기화를 진행
+- 참조 성공시 True, 참조 실패시 False를 반환
+
+int LNext(List * plist, LData * pdata);
+- 리스트의 두번째부터의 데이터를 호출할 때 사용
+- 순차적인 참조를 위해 반복 호출이 가능
+- 참조 성공시 True, 참조 실패시 False를 반환
+
+int LPrevious(List *plist, LData * data)
+- Lext의 반대방향으로 이동하여 데이터를 반환
+- 참조 성공시 Ture, 실패시 False를 반환
+
+LData LRemove(List * plist);
+- LFirst 또는 LNext의 마지막 반환 데이터를 삭제
+- 삭제된 데이터를 반환
+- 마지막 반환 데이터를 삭제하므로 연이은 반복 호출을 허용하지 않음
+
+int LCount(List * plist);
+- 리스트에 저장되어있는 데이터의 수를 반환
