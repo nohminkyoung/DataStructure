@@ -1,0 +1,18 @@
+void StackInit(Stack * pstack);
+- 스택의 초기화 진행
+- 스택 생성 후 제일 먼저 호출되어야 하는 함수
+
+int IsStackEmpty(Stack * pstack);
+- 스택이 비어있는 경우 TRUE 아닌경우 FALSE를 반환
+
+void SPush(Stack *pstack, Data data);
+- 스택에 데이터를 저장
+
+Data SPop(Stack * pstack);
+- 마지막에 저장된 요소 삭제
+- 삭제된 데이터는 반환됨
+- 본 함수 호출을 위해선 데이터가 하나이상 존재함이 보장되어야함
+
+Data SPeek(Stack * pstack);
+- 마지막에 저장된 요소를 반환, 삭제는 하지 않음
+- 본 함수 호출을 위해선 데이터가 하나이상 존재함이 보장되어야함
