@@ -1,0 +1,18 @@
+void QueueInit(Queue * pq);
+- 큐의 초기화를 진행
+- 큐 생성 후 제일 먼저 호출 되어야 하는 함수
+
+int QIsEmpty(Queue * pq);
+- 큐가 비어있는경우 True, 아닌경우 False를 반환하는 함수
+
+void Enqueue(Queue * pq, Data data);
+- 큐에 데이터를 저장하는 함수
+
+Data Dequeue(Queue * pq);
+- 저장 순서가 가장 앞선 데이터를 삭제
+- 삭제된 데이터는 반환
+- 본 함수의 호출을 위해서는 데이터가 하나이상 존재 해야함
+
+Data Peek(Queue * pq);
+- 저장 순서가 가장 앞선 데이터를 반환, 삭제는 하지 않음
+- 본 함수의 호출을 위해서는 데이터가 하나이상 존재 해야함
