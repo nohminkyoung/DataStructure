@@ -1,0 +1,29 @@
+void DequeInit(Deque * pdeque);
+- 덱의 초기화를 진행
+- 덱 생성 후 가장 먼저 호출되어야하는 함수
+
+int DQIsEmpty(Deque * pdeque);
+- 덱이 빈 경우 Treu, 아닌경우 False 를 반환
+
+void DQAddFirst(Deque * pdeque, Data data);
+- 덱의 머리에 데이터를 저장
+- data로 전달된 값을 저장
+
+void DQAddLast(Deque * pdeque, Data data);
+- 덱의 꼬리에 데이터를 저장
+- data로 전달된 값을 저장
+
+
+Data DQRemoveFirst(Deque * pdeque);
+- 덱의 머리에 위치한 데이터를 반환 및 소멸
+
+Data DQRemoveLast(Deque * pdeque);
+- 덱의 꼬리에 위치한 데이터를 반환 및 소멸
+
+
+Data DQGetFrist(Deque * pdeque);
+- 덱의 머리에 위치한 데이터를 반환
+
+
+Data DQGetLast(Deque * pdeque);
+- 덱의 꼬리에 위치한 데이터를 반환
